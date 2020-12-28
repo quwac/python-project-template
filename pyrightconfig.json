@@ -4,7 +4,9 @@
     ],
     "exclude": [
         "**/node_modules",
-        "**/__pycache__"
+        "**/__pycache__",
+        "src/manage.py",
+        "**/**/migrations/*.py"
     ],
     "useLibraryCodeForTypes": true,
     "reportMissingImports": true,
