@@ -1,5 +1,5 @@
 {
-  "name": "pyright",
+  "name": "pyrightenv",
   "version": "1.0.0",
   "description": "Environment for Pyright",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "pyright": "^1.1.95"
+    "pyright": "^1.1.97"
   },
   "scripts": {
     "pyright": "pyright --version && pyright"
