@@ -89,6 +89,9 @@ fi
             npm run pyright
         fi &&
             poetry run flake8 --config .flake8 "$target_file_or_dir"
-    fi
+    fi &&
+
+    # ---------- Test
+    poetry run pytest "tests"
 
 popd || exit 1
