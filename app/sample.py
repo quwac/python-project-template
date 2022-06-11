@@ -1,6 +1,6 @@
 import os
 
-from pythonprojecttemplate.sample.sample_module import sample_print
+from sample.sample_module import sample_print
 
 
 def b():
