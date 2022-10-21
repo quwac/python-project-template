@@ -6,6 +6,9 @@
     "ms-python.vscode-pylance",
     "streetsidesoftware.code-spell-checker",
     "timonwong.shellcheck",
-    "ms-vscode.makefile-tools"
+    "ms-vscode.makefile-tools",
+    "ms-python.black-formatter",
+    "ms-python.isort",
+    "esbenp.prettier-vscode"
   ]
 }
