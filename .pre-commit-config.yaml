@@ -17,7 +17,7 @@ repos:
       - id: trailing-whitespace
       - id: name-tests-test
   - repo: https://github.com/psf/black
-    rev: 22.3.0
+    rev: 22.10.0
     hooks:
       - id: black
   - repo: https://github.com/pycqa/isort
@@ -25,7 +25,7 @@ repos:
     hooks:
       - id: isort
   - repo: https://github.com/quwac/pyproject-autoflake
-    rev: main
+    rev: 1.0.2
     hooks:
       - id: pautoflake
   - repo: local
@@ -36,9 +36,9 @@ repos:
         language: node
         pass_filenames: true
         types: [python]
-        additional_dependencies: ['pyright@1.1.268']
+        additional_dependencies: [pyright@1.1.276]
   - repo: https://github.com/csachs/pyproject-flake8
-    rev: v0.0.1a4
+    rev: v5.0.4a1.post1
     hooks:
       - id: pyproject-flake8
   # JSON
@@ -49,7 +49,7 @@ repos:
         args: [--autofix]
   # YAML
   - repo: https://github.com/lyz-code/yamlfix
-    rev: 0.9.0
+    rev: 1.1.0
     hooks:
       - id: yamlfix
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -58,12 +58,12 @@ repos:
       - id: sort-simple-yaml
   # TOML
   - repo: https://github.com/pappasam/toml-sort
-    rev: v0.20.0
+    rev: v0.20.1
     hooks:
       - id: toml-sort
         args: [-a, -i]
   # Shell
   - repo: https://github.com/jumanjihouse/pre-commit-hooks
-    rev: 2.1.6
+    rev: 3.0.0
     hooks:
       - id: shellcheck
