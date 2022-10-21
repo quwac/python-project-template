@@ -28,10 +28,15 @@ repos:
     rev: main
     hooks:
       - id: pautoflake
-  - repo: https://github.com/necaris/pre-commit-pyright
-    rev: 1.1.53
+  - repo: local
     hooks:
       - id: pyright
+        name: pyright
+        entry: pyright
+        language: node
+        pass_filenames: true
+        types: [python]
+        additional_dependencies: ['pyright@1.1.268']
   - repo: https://github.com/csachs/pyproject-flake8
     rev: v0.0.1a4
     hooks:
