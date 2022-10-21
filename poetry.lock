@@ -1,5 +1,5 @@
 [metadata]
-content-hash = "93dce740040c27bf02cf5fbbc4b98f37d5bd7da9ce7d512fe9df1e515671b498"
+content-hash = "8b35eb86049e272b17cd4835da30ba55798f12bd607ffbad5648562f9a788322"
 lock-version = "1.1"
 python-versions = "^3.10"
 
@@ -15,6 +15,10 @@ attrs = [
 cfgv = [
     {file = "cfgv-3.3.1-py2.py3-none-any.whl", hash = "sha256:c6a0883f3917a037485059700b9e75da2464e6c27051014ad85ba6aaa5884426"},
     {file = "cfgv-3.3.1.tar.gz", hash = "sha256:f5a830efb9ce7a445376bb66ec94c638a9787422f96264c98edc6bdeed8ab736"},
+]
+click = [
+    {file = "click-8.1.3-py3-none-any.whl", hash = "sha256:bb4d8133cb15a609f44e8213d9b391b0809795062913b383c62be0ee95b1db48"},
+    {file = "click-8.1.3.tar.gz", hash = "sha256:7682dc8afb30297001674575ea00d1814d808d6a36af415a82bd481d37ba7b8e"},
 ]
 cognitive-complexity = [
     {file = "cognitive_complexity-1.3.0.tar.gz", hash = "sha256:a0cfbd47dee0b19f4056f892389f501694b205c3af69fb703cc744541e03dde5"},
@@ -54,6 +58,10 @@ flake8-builtins = [
 flake8-cognitive-complexity = [
     {file = "flake8_cognitive_complexity-0.1.0.tar.gz", hash = "sha256:f202df054e4f6ff182b659c261922b9c684628a47beb19cb0973c50d6a7831c1"},
 ]
+flake8-functions = [
+    {file = "flake8_functions-0.0.7-py3-none-any.whl", hash = "sha256:f2f75545c2b0df9eeba0ad316e2ac38c101676970b4441300fc07af3226a44f6"},
+    {file = "flake8_functions-0.0.7.tar.gz", hash = "sha256:40584b05d57e5ab185545bcfa08aa0edca52b04646d0df266e2b1667d6437184"},
+]
 flake8-functions-names = [
     {file = "flake8_functions_names-0.3.0.tar.gz", hash = "sha256:1a86ad60a04ce8dbe5af10275eaf56e2a3c23884f88e103f9fac5489d0435b81"},
 ]
@@ -87,6 +95,10 @@ iniconfig = [
 mccabe = [
     {file = "mccabe-0.7.0-py2.py3-none-any.whl", hash = "sha256:6c2d30ab6be0e4a46919781807b4f0d834ebdd6c6e3dca0bda5a15f863427b6e"},
     {file = "mccabe-0.7.0.tar.gz", hash = "sha256:348e0240c33b60bbdf4e523192ef919f28cb2c3d7d5c7794f74009290f236325"},
+]
+mr-proper = [
+    {file = "mr_proper-0.0.7-py3-none-any.whl", hash = "sha256:74a1b60240c46f10ba518707ef72811a01e5c270da0a78b5dd2dd923d99fdb14"},
+    {file = "mr_proper-0.0.7.tar.gz", hash = "sha256:03b517b19e617537f711ce418b125e5f2efd82ec881539cdee83195c78c14a02"},
 ]
 nodeenv = [
     {file = "nodeenv-1.7.0-py2.py3-none-any.whl", hash = "sha256:27083a7b96a25f2f5e1d8cb4b6317ee8aeda3bdd121394e5ac54e498028a042e"},
@@ -182,6 +194,10 @@ setuptools = [
     {file = "setuptools-65.5.0-py3-none-any.whl", hash = "sha256:f62ea9da9ed6289bfe868cd6845968a2c854d1427f8548d52cae02a42b4f0356"},
     {file = "setuptools-65.5.0.tar.gz", hash = "sha256:512e5536220e38146176efb833d4a62aa726b7bbff82cfbc8ba9eaa3996e0b17"},
 ]
+stdlib-list = [
+    {file = "stdlib-list-0.8.0.tar.gz", hash = "sha256:a1e503719720d71e2ed70ed809b385c60cd3fb555ba7ec046b96360d30b16d9f"},
+    {file = "stdlib_list-0.8.0-py3-none-any.whl", hash = "sha256:2ae0712a55b68f3fbbc9e58d6fa1b646a062188f49745b495f94d3310a9fdd3e"},
+]
 toml = [
     {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
     {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},
@@ -224,6 +240,17 @@ name = "cfgv"
 optional = false
 python-versions = ">=3.6.1"
 version = "3.3.1"
+
+[[package]]
+category = "dev"
+description = "Composable command line interface toolkit"
+name = "click"
+optional = false
+python-versions = ">=3.7"
+version = "8.1.3"
+
+[package.dependencies]
+colorama = {version = "*", markers = "platform_system == \"Windows\""}
 
 [[package]]
 category = "dev"
@@ -343,6 +370,18 @@ setuptools = "*"
 
 [[package]]
 category = "dev"
+description = "A flake8 extension that checks functions"
+name = "flake8-functions"
+optional = false
+python-versions = "*"
+version = "0.0.7"
+
+[package.dependencies]
+mr-proper = "*"
+setuptools = "*"
+
+[[package]]
+category = "dev"
 description = "An extension for flake8 that validates functions names, decomposition and conformity with annotations."
 name = "flake8-functions-names"
 optional = false
@@ -440,6 +479,19 @@ name = "mccabe"
 optional = false
 python-versions = ">=3.6"
 version = "0.7.0"
+
+[[package]]
+category = "dev"
+description = "Static Python code analyzer, that tries to check if functions in code are pure or not and why."
+name = "mr-proper"
+optional = false
+python-versions = "*"
+version = "0.0.7"
+
+[package.dependencies]
+click = ">=7.1.2"
+setuptools = "*"
+stdlib-list = ">=0.5.0"
 
 [[package]]
 category = "dev"
@@ -605,6 +657,17 @@ version = "65.5.0"
 docs = ["furo", "jaraco.packaging (>=9)", "jaraco.tidelift (>=1.4)", "pygments-github-lexers (==0.0.5)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-favicon", "sphinx-hoverxref (<2)", "sphinx-inline-tabs", "sphinx-notfound-page (==0.8.3)", "sphinx-reredirects", "sphinxcontrib-towncrier"]
 testing = ["build[virtualenv]", "filelock (>=3.4.0)", "flake8 (<5)", "flake8-2020", "ini2toml[lite] (>=0.9)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "mock", "pip (>=19.1)", "pip-run (>=8.8)", "pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=1.3)", "pytest-flake8", "pytest-mypy (>=0.9.1)", "pytest-perf", "pytest-xdist", "tomli-w (>=1.0.0)", "virtualenv (>=13.0.0)", "wheel"]
 testing-integration = ["build[virtualenv]", "filelock (>=3.4.0)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "pytest", "pytest-enabler", "pytest-xdist", "tomli", "virtualenv (>=13.0.0)", "wheel"]
+
+[[package]]
+category = "dev"
+description = "A list of Python Standard Libraries (2.6-7, 3.2-9)."
+name = "stdlib-list"
+optional = false
+python-versions = "*"
+version = "0.8.0"
+
+[package.extras]
+develop = ["sphinx"]
 
 [[package]]
 category = "dev"
