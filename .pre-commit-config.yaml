@@ -24,10 +24,10 @@ repos:
     rev: 5.10.1
     hooks:
       - id: isort
-  - repo: https://github.com/quwac/pyproject-autoflake
-    rev: 1.0.2
+  - repo: https://github.com/PyCQA/autoflake
+    rev: v1.7.7
     hooks:
-      - id: pautoflake
+      - id: autoflake
   - repo: local
     hooks:
       - id: pyright

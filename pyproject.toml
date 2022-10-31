@@ -13,7 +13,6 @@ recursive = true
 remove-all-unused-imports = true
 remove-duplicate-keys = true
 remove-unused-variables = true
-verbose = 0
 
 [tool.black]
 line-length = 100
