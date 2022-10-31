@@ -12,6 +12,9 @@
     ]
   },
   "files.eol": "\n",
+  "flake8.path": [
+    "${workspaceFolder}/.venv/bin/pflake8"
+  ],
   "python.analysis.extraPaths": [
     "${workspaceFolder}/.venv/lib/python3.10/site-packages"
   ],
