@@ -22,12 +22,15 @@
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "${workspaceFolder}/.venv/bin/pflake8",
   "terminal.integrated.env.linux": {
+    "PATH": "$HOME/.asdf/shims:$PATH",
     "PYTHONPATH": "${workspaceFolder}"
   },
   "terminal.integrated.env.osx": {
+    "PATH": "$HOME/.asdf/shims:$PATH",
     "PYTHONPATH": "${workspaceFolder}"
   },
   "terminal.integrated.env.windows": {
+    "PATH": "$HOME/.asdf/shims;$PATH",
     "PYTHONPATH": "${workspaceFolder}"
   }
 }
