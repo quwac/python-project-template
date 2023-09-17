@@ -2,7 +2,7 @@
 repos:
   # Python
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.3.0
+    rev: v4.4.0
     hooks:
       - id: check-case-conflict
       - id: check-added-large-files
@@ -17,15 +17,15 @@ repos:
       - id: trailing-whitespace
       - id: name-tests-test
   - repo: https://github.com/psf/black
-    rev: 22.10.0
+    rev: 23.9.1
     hooks:
       - id: black
   - repo: https://github.com/pycqa/isort
-    rev: 5.10.1
+    rev: 5.12.0
     hooks:
       - id: isort
   - repo: https://github.com/PyCQA/autoflake
-    rev: v1.7.7
+    rev: v2.2.1
     hooks:
       - id: autoflake
   - repo: local
@@ -38,31 +38,32 @@ repos:
         types: [python]
         additional_dependencies: [pyright@1.1.276]
   - repo: https://github.com/csachs/pyproject-flake8
-    rev: v5.0.4a1.post1
+    rev: v6.0.0.post1
     hooks:
       - id: pyproject-flake8
   # JSON
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.3.0
+    rev: v4.4.0
     hooks:
       - id: pretty-format-json
         args: [--autofix]
   # YAML
   - repo: https://github.com/lyz-code/yamlfix
-    rev: 1.1.0
+    rev: 1.13.0
     hooks:
       - id: yamlfix
         exclude: ^.*poetry.lock$
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.3.0
+    rev: v4.4.0
     hooks:
       - id: sort-simple-yaml
   # TOML
   - repo: https://github.com/pappasam/toml-sort
-    rev: v0.20.1
+    rev: v0.23.1
     hooks:
       - id: toml-sort
         args: [-a, -i]
+        exclude: ^(.*/)?poetry\.lock$
   # Shell
   - repo: https://github.com/jumanjihouse/pre-commit-hooks
     rev: 3.0.0
