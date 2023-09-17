@@ -69,7 +69,7 @@ executionEnvironments = [
 ]
 ignore = []
 include = ["app"]
-pythonVersion = "3.10"
+pythonVersion = "3.11"
 reportCallInDefaultInitializer = true
 reportImplicitStringConcatenation = true
 reportMissingImports = true
