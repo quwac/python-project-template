@@ -12,7 +12,6 @@ Python project template.
     1. `⌘ + Shift + P`
     1. Select `Shell Command: Install 'code' command IN PATH`
     1. Restart your terminal
-1. Install `XCode >= 12.2` & `Command Line Tools for Xcode .= 12` from [Apple Developer](https://developer.apple.com/download/more/?=xcode)
 1. `git clone git@github.com:quwac/python-project-template.git` then run `cd python-project-template`
 1. Run `make init`
 1. Run `open .`
