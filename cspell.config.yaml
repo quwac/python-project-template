@@ -1,7 +1,6 @@
 ---
 version: '0.2'
-ignorePaths:
-  - poetry.lock
+ignorePaths: [poetry.lock]
 dictionaryDefinitions: []
 dictionaries: []
 words:
