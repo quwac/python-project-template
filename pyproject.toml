@@ -38,25 +38,23 @@ name = "python-project-template"
 version = "1.0.0"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 
 [tool.poetry.group.dev.dependencies]
 flake8-alfred = "^1.1.1"
 flake8-annotations = "^3.0.1"
-flake8-bugbear = "^23.9.16"
-flake8-builtins = "^2.1.0"
+flake8-bugbear = "^23.12.2"
+flake8-builtins = "^2.2.0"
 flake8-cognitive-complexity = "^0.1.0"
 flake8-functions = "^0.0.8"
 flake8-functions-names = "^0.4.0"
 flake8-print = "^5.0.0"
 flake8-pytest = "^1.4"
-flake8-simplify = "^0.20.0"
+flake8-simplify = "^0.21.0"
 flake8-string-format = "^0.3.0"
 flake8-use-fstring = "^1.4"
-pre-commit = "^3.4.0"
-pyproject-flake8 = "^6.0.0.post1"
-pyright = "^1.1.327"
-pytest = "^7.4.2"
+pyproject-flake8 = "^6.1.0"
+pytest = "^7.4.4"
 
 [tool.pyright]
 defineConstant = {DEBUG = true}
@@ -69,7 +67,7 @@ executionEnvironments = [
 ]
 ignore = []
 include = ["app"]
-pythonVersion = "3.11"
+pythonVersion = "3.12"
 reportCallInDefaultInitializer = true
 reportImplicitStringConcatenation = true
 reportMissingImports = true

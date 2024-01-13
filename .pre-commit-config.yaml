@@ -2,7 +2,7 @@
 repos:
   # Python
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       - id: check-case-conflict
       - id: check-added-large-files
@@ -17,11 +17,11 @@ repos:
       - id: trailing-whitespace
       - id: name-tests-test
   - repo: https://github.com/psf/black
-    rev: 23.9.1
+    rev: 23.12.1
     hooks:
       - id: black
   - repo: https://github.com/pycqa/isort
-    rev: 5.12.0
+    rev: 5.13.2
     hooks:
       - id: isort
   - repo: https://github.com/PyCQA/autoflake
@@ -36,25 +36,29 @@ repos:
         language: node
         pass_filenames: true
         types: [python]
-        additional_dependencies: [pyright@1.1.276]
+        additional_dependencies: [pyright@1.1.345]
   - repo: https://github.com/csachs/pyproject-flake8
-    rev: v6.0.0.post1
+    rev: v6.1.0
     hooks:
       - id: pyproject-flake8
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.7.6
+    hooks:
+      - id: bandit
   # JSON
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       - id: pretty-format-json
         args: [--autofix]
   # YAML
   - repo: https://github.com/lyz-code/yamlfix
-    rev: 1.13.0
+    rev: 1.16.0
     hooks:
       - id: yamlfix
         exclude: ^.*poetry.lock$
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       - id: sort-simple-yaml
   # TOML
